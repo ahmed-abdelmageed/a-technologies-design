@@ -9,8 +9,7 @@ import { CurrencyPipe } from '../../pipes/currency.pipe';
   standalone: true,
   imports: [CommonModule, CurrencyPipe], 
   templateUrl: './number-header.component.html',
-  styleUrls: ['./number-header.component.scss'],
-  providers: [CurrencyPipe], 
+  styleUrls: ['./number-header.component.scss']
 })
 export class NumberHeaderComponent implements OnInit {
   @Input() contact: any;

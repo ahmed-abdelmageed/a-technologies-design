@@ -25,7 +25,7 @@
           <td>{{ transaction.responsible }}</td>
           <td>{{ transaction.localContract }}</td>
           <td>{{ transaction.internationalContract }}</td>
-          <td class="amount-cell">{{ transaction.amount | currency}}</td>
+          <td class="amount-cell">{{ transaction.amount | currencyPipe}}</td>
         </tr>
       </tbody>
     </table>

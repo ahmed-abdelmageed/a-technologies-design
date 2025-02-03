@@ -77,20 +77,20 @@
       <div class="divider-box"></div>
       <div class="info-box">
         <span class="label">{{ translations.currentBalance }}</span>
-        <strong class="value">{{ contact?.currentBalance | currency }}</strong>
+        <strong class="value">{{ contact?.currentBalance | currencyPipe  }}</strong>
       </div>
       <div class="divider-box"></div>
       <div class="info-box">
         <span class="label">{{ translations.usedBalanceClient }}</span>
         <strong class="value">{{
-          contact?.usedBalanceClient | currency
+          contact?.usedBalanceClient | currencyPipe 
         }}</strong>
       </div>
       <div class="divider-box"></div>
       <div class="info-box">
         <span class="label">{{ translations.totalUsedBalance }}</span>
         <strong class="value">{{
-          contact?.totalUsedBalance | currency
+          contact?.totalUsedBalance | currencyPipe 
         }}</strong>
       </div>
     </div>
