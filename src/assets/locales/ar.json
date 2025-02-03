@@ -1,0 +1,25 @@
+{
+    "client": "العميل",
+    "assignmentDate": "تاريخ التعيين",
+    "cancellationDate": "تاريخ الإلغاء",
+    "responsible": "المسؤول",
+    "localContract": "العقد المحلي",
+    "internationalContract": "العقد الدولي",
+    "amount": "المبلغ",
+    "display": "عرض",
+    "fromTotal": "من أصل",
+    "statusUsed": "قيد الاستخدام",
+    "protocolName": "اسم البروتوكول",
+    "country": "الدولة",
+    "currentClient": "العميل الحالي",
+    "lastPackageDate": "تاريخ آخر باقة",
+    "lastShipmentDate": "تاريخ آخر شحنة",
+    "currentBalance": "الرصيد الحالي",
+    "usedBalanceClient": "الرصيد المستخدم للعميل الحالي",
+    "totalUsedBalance": "الرصيد المستخدم للرقم ككل",
+     "creationDate": "تاريخ الإنشاء",
+  "createdBy": "تم الإنشاء بواسطة",
+   "NumberOfextensions": "عدد الإمتدادات"
+
+  }
+  

@@ -1,0 +1,23 @@
+{
+  "client": "Client",
+  "assignmentDate": "Assignment Date",
+  "cancellationDate": "Cancellation Date",
+  "responsible": "Responsible",
+  "localContract": "Local Contract",
+  "internationalContract": "International Contract",
+  "amount": "Amount",
+  "display": "Display",
+  "fromTotal": "of total",
+  "statusUsed": "In Use",
+  "protocolName": "Protocol Name",
+  "country": "Country",
+  "currentClient": "Current Client",
+  "lastPackageDate": "Last Package Date",
+  "lastShipmentDate": "Last Shipment Date",
+  "currentBalance": "Current Balance",
+  "usedBalanceClient": "Used Balance for Current Client",
+  "totalUsedBalance": "Total Used Balance",
+  "creationDate": "Creation Date",
+  "createdBy": "Created By",
+  "NumberOfextensions": "Number Of extensions"
+}

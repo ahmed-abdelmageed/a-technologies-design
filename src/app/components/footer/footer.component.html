@@ -1,0 +1,20 @@
+<footer class="footer" [dir]="direction$ | async">
+  <div class="footer-container">
+    <div class="footer-right">
+      <img [src]="userImage" alt="User Profile" class="footer-avatar" />
+      <div class="author-details">
+        <span class="footer-label">{{ translations.createdBy }}</span>
+        <span class="footer-user">{{ createdBy }}</span>
+      </div>
+    </div>
+
+    <div class="footer-left">
+      <div class="footer-label">{{ translations.creationDate }}</div>
+      <div class="creation-details">
+        <span class="creation-date">{{ creationDate }}</span>
+        <span class="footer-dot">•</span>
+        <span class="creation-time">{{ creationTime }}</span>
+      </div>
+    </div>
+  </div>
+</footer>

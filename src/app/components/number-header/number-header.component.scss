@@ -1,0 +1,228 @@
+// Variables
+$primary-color: #48b29a;
+$text-dark: rgba(28, 28, 40, 1);
+$text-gray: #777;
+$text-bold: #333;
+$divider-color: rgba(223, 223, 223, 1);
+$danger-color: #e63946;
+
+// Header
+.header {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  .country-flag{
+    width: 21px;
+    height: 21px;
+    gap: 0px;
+    border-radius: 95.45px ;
+    opacity: 0px;
+    
+
+
+  }
+  .number-status-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .number-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .right-content {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .number-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .phone-number {
+        font-size: 20px;
+        font-weight: bold;
+        color: $text-dark;
+      }
+
+      .status-badge {
+        background: $primary-color;
+        color: white;
+        width: 102px;
+        min-height: 28px;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .icon-dropdown {
+      position: relative;
+
+      .icon-button {
+        background: none;
+        border: none;
+        cursor: url("/assets/images/cursor.png") 8 8, pointer;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        top: 35px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        width: 160px;
+        padding: 10px;
+        z-index: 1000;
+        white-space: nowrap;
+
+        .dropdown-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px;
+          cursor: url("/assets/images/cursor.png") 8 8, pointer;
+          font-size: 14px;
+          color: #1c1c28;
+          transition: background 0.3s ease-in-out;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.05);
+          }
+        }
+
+        .delete {
+          color: $danger-color;
+
+          &:hover {
+            background: rgba(230, 57, 70, 0.1);
+          }
+        }
+      }
+    }
+
+    .icon-dropdown-rtl {
+      .dropdown-menu {
+        left: 12px;
+        right: auto;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+    }
+
+    .icon-dropdown-ltr {
+      .dropdown-menu {
+        right: 0;
+        left: auto;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    }
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+
+    .info-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+      padding: 10px 0;
+    }
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+      flex: 1;
+      min-width: 0;
+
+      .label {
+        font-size: 14px;
+        color: $text-gray;
+      }
+
+      .value {
+        font-size: 16px;
+        font-weight: bold;
+        color: $text-bold;
+      }
+    }
+
+    .divider-box {
+      width: 1px;
+      height: 40px;
+      background: $divider-color;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .number-status {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .header-content {
+      .info-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .divider-box {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .number-status {
+      .phone-number {
+        font-size: 18px;
+      }
+
+      .status-badge {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 5px 10px;
+      }
+    }
+
+    .info-box {
+      min-width: 120px;
+    }
+  }
+}

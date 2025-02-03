@@ -1,0 +1,98 @@
+<header class="header" [dir]="direction$ | async">
+  <div class="number-status" [dir]="direction$ | async">
+    <div class="number-status-content">
+      <div class="right-content">
+        <strong class="phone-number">{{ contact?.number }}</strong>
+        <div class="status-badge">{{ translations.statusUsed }}</div>
+      </div>
+
+      <div
+        class="icon-dropdown"
+        [ngClass]="
+          direction === 'rtl' ? 'icon-dropdown-rtl' : 'icon-dropdown-ltr'
+        "
+      >
+        <button
+          class="icon-button"
+          (mouseenter)="isIconHovered = true"
+          (mouseleave)="isIconHovered = false"
+          (click)="toggleDropdown()"
+        >
+          <img
+            [src]="
+              isDropdownOpen || isIconHovered
+                ? 'assets/images/menu-icon-selected.png'
+                : 'assets/images/menu-icon.png'
+            "
+            alt="Menu Icon"
+          />
+        </button>
+
+        <div class="dropdown-menu" *ngIf="isDropdownOpen">
+          <div class="dropdown-item" (click)="handleOptionSelection('edit')">
+            <img src="assets/images/edit-icon.png" alt="Edit Icon" />
+            تعديل الرقم
+          </div>
+          <div
+            class="dropdown-item delete"
+            (click)="handleOptionSelection('delete')"
+          >
+            <img src="assets/images/delete-icon.png" alt="Delete Icon" />
+            إلغاء التعيين
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-content" [dir]="direction$ | async">
+    <div class="info-grid">
+      <div class="info-box">
+        <span class="label">{{ translations.protocolName }}</span>
+        <strong class="value">{{ contact?.protocolName }}</strong>
+      </div>
+      <div class="divider-box"></div>
+      <div class="info-box">
+        <span class="label">{{ translations.country }}</span>
+        <strong class="value"> <img class="country-flag" [src]="contact.countryFlag" alt="flag" />   {{ contact?.country }} </strong>
+      </div>
+      <div class="divider-box"></div>
+      <div class="info-box">
+        <span class="label">{{ translations.currentClient }}</span>
+        <strong class="value"> <img class="country-flag" [src]="contact.currentClientLogo" alt="flag" />  {{ contact?.currentClient }}  </strong>
+      </div>
+      <div class="divider-box"></div>
+      <div class="info-box">
+        <span class="label">{{ translations.NumberOfextensions }}</span>
+        <strong class="value">{{ contact?.NumberOfextensions }}</strong>
+      </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="info-grid">
+      <div class="info-box">
+        <span class="label">{{ translations.lastShipmentDate }}</span>
+        <strong class="value">{{ contact?.lastPackageDate }}</strong>
+      </div>
+      <div class="divider-box"></div>
+      <div class="info-box">
+        <span class="label">{{ translations.currentBalance }}</span>
+        <strong class="value">{{ contact?.currentBalance | currency }}</strong>
+      </div>
+      <div class="divider-box"></div>
+      <div class="info-box">
+        <span class="label">{{ translations.usedBalanceClient }}</span>
+        <strong class="value">{{
+          contact?.usedBalanceClient | currency
+        }}</strong>
+      </div>
+      <div class="divider-box"></div>
+      <div class="info-box">
+        <span class="label">{{ translations.totalUsedBalance }}</span>
+        <strong class="value">{{
+          contact?.totalUsedBalance | currency
+        }}</strong>
+      </div>
+    </div>
+  </div>
+</header>

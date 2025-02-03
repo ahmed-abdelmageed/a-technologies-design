@@ -1,0 +1,72 @@
+<div class="table-container" [dir]="direction">
+  <div class="scrollable-table">
+    <table class="custom-table">
+      <thead [ngClass]="direction === 'rtl' ? 'thead-rtl' : 'thead-ltr'">
+        <tr>
+          <th>{{ translations.client }}</th>
+          <th>{{ translations.assignmentDate }}</th>
+          <th>{{ translations.cancellationDate }}</th>
+          <th>{{ translations.responsible }}</th>
+          <th>{{ translations.localContract }}</th>
+          <th>{{ translations.internationalContract }}</th>
+          <th class="amount-header">{{ translations.amount }}</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let transaction of displayedTransactions; trackBy: trackByFn"
+          [ngClass]="direction === 'rtl' ? 'row-rtl' : 'row-ltr'">
+          <td>
+            <img class="company-img" [src]="transaction.image" alt="company-logo" />
+            {{ transaction.client }}
+          </td>
+          <td>{{ transaction.dateOfAssignment }}</td>
+          <td>{{ transaction.dateOfCancellation || "-" }}</td>
+          <td>{{ transaction.responsible }}</td>
+          <td>{{ transaction.localContract }}</td>
+          <td>{{ transaction.internationalContract }}</td>
+          <td class="amount-cell">{{ transaction.amount | currency}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+  <!-- Pagination -->
+  <div class="pagination-container">
+    <div class="pagination-info">
+      <span class="pagination-display">{{ translations.display }} </span>
+      <select
+        class="pag-size-select"
+        [(ngModel)]="pageSize"
+        (change)="onPageSizeChange(pageSize)"
+      >
+        <option *ngFor="let size of pageSizeOptions" [value]="size">
+          {{ size }}
+        </option>
+      </select>
+      <span>{{ translations.fromTotal }} {{ totalTransactions }}</span>
+    </div>
+    <div class="pagination-controls">
+      <button
+        (click)="onPageChange(currentPage - 1)"
+        [disabled]="currentPage === 1"
+      >
+       <
+      </button>
+      <button
+        *ngFor="let page of getPages()"
+        (click)="onPageChange(page)"
+        [class.active]="page === currentPage"
+      >
+        {{ page }}
+      </button>
+      <button
+        (click)="onPageChange(currentPage + 1)"
+        [disabled]="currentPage >= getTotalPages()"
+      >
+       >
+      </button>
+    </div>
+  </div>
+</div>

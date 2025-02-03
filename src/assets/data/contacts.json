@@ -1,0 +1,196 @@
+{
+    "contacts": [
+      {
+        "id": 1,
+        "number": "012345678910",
+        "protocolName": "فودافون مصر",
+        "country": "المملكة الأردنية الهاشمية",
+        "countryFlag": "assets/images/countryFlag.png",
+        "currentClient": "الشركة القابضة للإبادة",
+        "currentClientLogo": "assets/images/logo.png",
+        "currentBalance": 5000,
+        "usedBalanceClient": 5000,
+        "totalUsedBalance": 5000,
+        "lastPackageDate": "2024/12/29",
+        "NumberOfextensions":"09",
+        "transactions": [
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          },
+          {
+            "client": "الشركة القابضة للإبادة",
+            "dateOfAssignment": "01/12/2024",
+            "dateOfCancellation": "-",
+            "responsible": "عبدالرحيم إسماعيل نصف",
+            "localContract": 7654,
+            "internationalContract": 122,
+            "amount": 61890,
+            "image":"assets/images/logo.png"
+          }
+          
+        ],
+        "createdBy": "عبدالرحيم إسماعيل نصف",
+        "creationDate": "01/12/2024",
+        "creationTime": "04:30"
+      }
+    ]
+    
+  }
+  

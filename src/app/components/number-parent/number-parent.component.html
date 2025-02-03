@@ -1,0 +1,35 @@
+<div class="number-display">
+  <div class="number-left">
+    <span class="number-design">
+      <img src="assets/images/hashtag2.png" alt="hashtag Icon" />
+    </span>
+    <h2 class="number-title">عرض الرقم</h2>
+  </div>
+  <div class="number-right">
+    <div class="language-switcher">
+      <button class="dropdown-btn" (click)="toggleDropdown()">
+        {{ currentLanguage === "ar" ? "العربية" : "English" }}
+        <span class="arrow-icon" [ngClass]="{ rotated: isDropdownVisible }"
+          >▼</span
+        >
+      </button>
+
+      <ul class="dropdown-menu" [class.show]="isDropdownVisible">
+        <li (click)="switchLanguage('ar')">العربية</li>
+        <li (click)="switchLanguage('en')">English</li>
+      </ul>
+    </div>
+
+    <button class="close-button">
+      <span class="close-icon">✖</span>
+    </button>
+  </div>
+</div>
+
+<!-- Main Content Container -->
+<div class="container" [dir]="direction$ | async">
+  <app-number-header [contact]="contact"></app-number-header>
+  <app-table [transactions]="contact?.transactions"></app-table>
+  <app-footer></app-footer>
+
+</div>

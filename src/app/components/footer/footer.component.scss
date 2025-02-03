@@ -1,0 +1,134 @@
+.footer {
+    width: 100%;
+    padding: 12px 20px;
+    background: #fff;
+    border: 1px solid #ecf0f5;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    padding: 8px 0;
+    margin: 0 auto;
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .footer-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+  
+  .author-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    .footer-label {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+  
+    .footer-user {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1c1c28;
+    }
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    .footer-label {
+      font-size: 12px;
+      font-weight: 400;
+      color: #6b7280;
+    }
+  
+    .creation-details {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+  
+      .creation-date,
+      .creation-time {
+        font-size: 14px;
+        font-weight: 400;
+        color: #1c1c28;
+      }
+    }
+  }
+  
+  .footer-dot {
+    font-size: 14px;
+    color: #999;
+  }
+  
+
+  
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .footer-right,
+    .footer-left {
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 12px 15px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+    }
+  
+    .footer-right,
+    .footer-left {
+      flex-direction: column;
+      gap: 4px;
+    }
+  
+    .footer-avatar {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer-container {
+      gap: 6px;
+    }
+  
+    .footer-label,
+    .creation-details span {
+      font-size: 12px;
+    }
+  }
+  
